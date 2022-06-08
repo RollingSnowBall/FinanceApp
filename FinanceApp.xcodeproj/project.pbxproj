@@ -11,6 +11,13 @@
 		B8370B15284F772F00193F0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8370B14284F772F00193F0F /* ContentView.swift */; };
 		B8370B17284F773000193F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8370B16284F773000193F0F /* Assets.xcassets */; };
 		B8370B1A284F773000193F0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8370B19284F773000193F0F /* Preview Assets.xcassets */; };
+		B8370B212850C8A100193F0F /* NavigationBarWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8370B202850C8A100193F0F /* NavigationBarWithButton.swift */; };
+		B8370B232850CFDC00193F0F /* AssetMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8370B222850CFDC00193F0F /* AssetMenu.swift */; };
+		B8370B252850D18400193F0F /* AssetMenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8370B242850D18400193F0F /* AssetMenuButtonStyle.swift */; };
+		B8370B272850D4ED00193F0F /* AssetMenuGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8370B262850D4ED00193F0F /* AssetMenuGridView.swift */; };
+		B8370B292850D69300193F0F /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8370B282850D69300193F0F /* AssetView.swift */; };
+		B8370B2B2850D7E000193F0F /* AssetBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8370B2A2850D7E000193F0F /* AssetBanner.swift */; };
+		B8370B2E2850D86C00193F0F /* BannerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8370B2D2850D86C00193F0F /* BannerCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		B8370B14284F772F00193F0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8370B16284F773000193F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8370B19284F773000193F0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8370B202850C8A100193F0F /* NavigationBarWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarWithButton.swift; sourceTree = "<group>"; };
+		B8370B222850CFDC00193F0F /* AssetMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenu.swift; sourceTree = "<group>"; };
+		B8370B242850D18400193F0F /* AssetMenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenuButtonStyle.swift; sourceTree = "<group>"; };
+		B8370B262850D4ED00193F0F /* AssetMenuGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenuGridView.swift; sourceTree = "<group>"; };
+		B8370B282850D69300193F0F /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
+		B8370B2A2850D7E000193F0F /* AssetBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetBanner.swift; sourceTree = "<group>"; };
+		B8370B2D2850D86C00193F0F /* BannerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,13 @@
 		B8370B11284F772F00193F0F /* FinanceApp */ = {
 			isa = PBXGroup;
 			children = (
+				B8370B282850D69300193F0F /* AssetView.swift */,
+				B8370B2C2850D80300193F0F /* Entities */,
+				B8370B2F2850D88200193F0F /* AssetMenu */,
+				B8370B2D2850D86C00193F0F /* BannerCard.swift */,
 				B8370B12284F772F00193F0F /* FinanceAppApp.swift */,
 				B8370B14284F772F00193F0F /* ContentView.swift */,
+				B8370B202850C8A100193F0F /* NavigationBarWithButton.swift */,
 				B8370B16284F773000193F0F /* Assets.xcassets */,
 				B8370B18284F773000193F0F /* Preview Content */,
 			);
@@ -65,6 +84,24 @@
 				B8370B19284F773000193F0F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8370B2C2850D80300193F0F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B8370B222850CFDC00193F0F /* AssetMenu.swift */,
+				B8370B2A2850D7E000193F0F /* AssetBanner.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B8370B2F2850D88200193F0F /* AssetMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B8370B242850D18400193F0F /* AssetMenuButtonStyle.swift */,
+				B8370B262850D4ED00193F0F /* AssetMenuGridView.swift */,
+			);
+			path = AssetMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8370B272850D4ED00193F0F /* AssetMenuGridView.swift in Sources */,
+				B8370B212850C8A100193F0F /* NavigationBarWithButton.swift in Sources */,
+				B8370B2B2850D7E000193F0F /* AssetBanner.swift in Sources */,
+				B8370B292850D69300193F0F /* AssetView.swift in Sources */,
 				B8370B15284F772F00193F0F /* ContentView.swift in Sources */,
 				B8370B13284F772F00193F0F /* FinanceAppApp.swift in Sources */,
+				B8370B232850CFDC00193F0F /* AssetMenu.swift in Sources */,
+				B8370B2E2850D86C00193F0F /* BannerCard.swift in Sources */,
+				B8370B252850D18400193F0F /* AssetMenuButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
